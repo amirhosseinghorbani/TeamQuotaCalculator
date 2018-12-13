@@ -1,0 +1,95 @@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model Manager
+@{
+    ViewData["Title"] = "Add Person";
+}
+
+<div class="row" style="padding:50px 15px">
+    <div class="col-md-12" style="direction:rtl">
+        <form method="POST">
+            <div class="form-group">
+                <label for="name">نام شخص</label>
+                <input type="text" class="form-control" asp-for="Name" placeholder="نام شخص">
+                <small id="managerHelp" class="form-text text-muted">نام شخصی که برای محاسبه سهم میخواهد ثبت شود</small>
+            </div>
+            <div class="form-check">
+                <label>1.</label>
+                <input type="checkbox" class="form-check-input" asp-for="q1">
+                <label class="form-check-label">@Questions.q1</label>
+            </div>
+            <div class="form-check">
+                <label>2.</label>
+                <input type="checkbox" class="form-check-input" asp-for="q2">
+                <label class="form-check-label">@Questions.q2</label>
+            </div>
+            <div class="form-check">
+                <label>3.</label>
+                <input type="checkbox" class="form-check-input" asp-for="q3">
+                <label class="form-check-label">@Questions.q3</label>
+            </div>
+            <div class="form-check">
+                <label>4.</label>
+                <input type="checkbox" class="form-check-input" asp-for="q4">
+                <label class="form-check-label">@Questions.q4</label>
+            </div>
+            <div class="form-check">
+                <label>5.</label>
+                <input type="checkbox" class="form-check-input" asp-for="q5">
+                <label class="form-check-label">@Questions.q5</label>
+            </div>
+            <div class="form-check">
+                <label>6.</label>
+                <input type="checkbox" class="form-check-input" asp-for="q6">
+                <label class="form-check-label">@Questions.q6</label>
+            </div>
+            <div class="form-check">
+                <label>7.</label>
+                <input type="checkbox" class="form-check-input" asp-for="q7">
+                <label class="form-check-label">@Questions.q7</label>
+            </div>
+            <div class="form-check">
+                <label>8.</label>
+                <input type="checkbox" class="form-check-input" asp-for="q8">
+                <label class="form-check-label">@Questions.q8</label>
+            </div>
+            <div class="form-check">
+                <label>9.</label>
+                <input type="checkbox" class="form-check-input" asp-for="q9">
+                <label class="form-check-label">@Questions.q9</label>
+            </div>
+            <div class="form-check">
+                <label>10.</label>
+                <input type="checkbox" class="form-check-input" asp-for="q10">
+                <label class="form-check-label">@Questions.q10</label>
+            </div>            
+            <div class="form-check">
+                <label>11.</label>
+                <input type="checkbox" class="form-check-input" asp-for="q11">
+                <label class="form-check-label">@Questions.q11</label>
+            </div>
+            <div class="form-check">
+                <label>12.</label>
+                <input type="checkbox" class="form-check-input" asp-for="q12">
+                <label class="form-check-label">@Questions.q12</label>
+            </div>
+            <div class="form-check">
+                <label>13.</label>
+                <input type="checkbox" class="form-check-input" asp-for="q13">
+                <label class="form-check-label">@Questions.q13</label>
+            </div>
+            <div class="form-check">
+                <label>14.</label>
+                <input type="checkbox" class="form-check-input" asp-for="q14">
+                <label class="form-check-label">@Questions.q14</label>
+            </div>
+            <div class="form-check">
+                <label>15.</label>
+                <input type="checkbox" class="form-check-input" asp-for="q15">
+                <label class="form-check-label">@Questions.q15</label>
+            </div>
+            <div style="padding:20px 0px">
+            <button type="submit" class="btn btn-primary">ثبت</button>
+            </div>
+        </form>
+    </div>
+</div>
